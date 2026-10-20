@@ -8,14 +8,13 @@ import androidx.lifecycle.ViewModel
 class MainViewModel : ViewModel() {
 
     var contador by mutableStateOf(0)
-        private set
 
     val explicacion: String = """
-        ¿Qué es un ViewModel en Jetpack Compose?
+        ¿Qué es un ViewModel?
         
-        Es un componente que conserva y gestiona el estado de la UI. 
-        Sobrevive a los cambios de configuración (como rotar la pantalla) 
-        sin perder el valor de sus variables.
+        Es una clase que se encarga de guardar y controlar los datos de una pantalla. Además,
+        mantiene esos datos cuando ocurren cambios de configuración o al cambiar de vista y volver
+        sin perder sus valores.
     """.trimIndent()
 
     fun incrementar() {
